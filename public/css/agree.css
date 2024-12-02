@@ -4,3 +4,48 @@ header {
   text-align: center;
   padding-top: 40px;
 }
+
+label {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+}
+
+header .title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5a55cb;
+  margin-bottom: 0px;
+}
+
+main {
+  text-align: left;
+}
+
+/* 약관이름 */
+main .agreeSection > label {
+  color: #5a55cb;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+/* 약관동의 */
+main .agreeSection-cheak {
+  color: #5a55cb;
+  margin: 10px 0px;
+  text-align: right;
+}
+
+main form button {
+  width: 100%;
+  height: 50px;
+  background-color: #5a55cb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

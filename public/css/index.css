@@ -1,23 +1,7 @@
-header {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 40px;
-}
-
 header .logo {
   font-size: 50px;
   font-weight: bold;
   color: #5a55cb;
-}
-
-main {
-  width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px 40px;
-  box-sizing: border-box;
 }
 
 main .inputBox .loginBox {
@@ -86,11 +70,6 @@ main .snsForm .google {
   font-size: 1.1rem;
   margin-top: 10px;
   cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px 40px;
 }
 
 /* 인트로 */

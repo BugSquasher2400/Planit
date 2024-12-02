@@ -1,0 +1,28 @@
+main form {
+  text-align: left;
+}
+
+main form label {
+  display: block;
+  margin: 10px 0px;
+  color: #5a55cb;
+  font-weight: bold;
+}
+
+main form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  font-size: 1.1rem;
+}
+
+/* 인증 */
+main form input[type="email"]::after {
+  width: 40px;
+  height: 40px;
+
+  content: "asd";
+  background-color: red;
+  z-index: 10;
+}

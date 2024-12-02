@@ -44,9 +44,13 @@ const uploadDetail = multer({
 const indexRouter = require("./router/index");
 app.use("/", indexRouter);
 
-//
+// 약관동의
 const agreeRouter = require("./router/agree");
 app.use("/", agreeRouter);
+
+// 회원가입
+const singnupRouter = require("./router/singn");
+app.use("/", singnupRouter);
 
 app.listen(PORT, () => {
   console.log("서버시작");
