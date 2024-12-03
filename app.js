@@ -1,5 +1,7 @@
 const express = require("express");
 const multer = require("multer");
+const mysql = require("mysql2");
+const nodemailer = require("nodemailer");
 const path = require("path");
 const app = express();
 const PORT = 8080;
@@ -40,6 +42,15 @@ const uploadDetail = multer({
   limits: { fieldSize: 5 * 1024 * 1024 }, // 5MB
 });
 
+// 이메일 발송을 위한 Nodemailer 설정
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "revecloud@gmail.com",
+    pass: "xzrjs1589!@",
+  },
+});
+
 // Index 라우터 설정
 const indexRouter = require("./router/index");
 app.use("/", indexRouter);
@@ -51,6 +62,15 @@ app.use("/", agreeRouter);
 // 회원가입
 const singnupRouter = require("./router/singn");
 app.use("/", singnupRouter);
+
+// TODO 메인
+const todoRouter = require("./router/todo");
+app.use("/", todoRouter);
+
+// 404
+app.get("*", (req, res) => {
+  res.send("404");
+});
 
 app.listen(PORT, () => {
   console.log("서버시작");

@@ -18,11 +18,54 @@ main form input {
 }
 
 /* 인증 */
-main form input[type="email"]::after {
-  width: 40px;
+main .email-auth {
+  display: flex;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 10px;
+}
+main .email-auth input {
+  border: none;
+}
+main .email-auth button {
+  display: inline-block;
+  width: 100px;
   height: 40px;
+  border: none;
+  background-color: #5a55cb;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
 
-  content: "asd";
-  background-color: red;
-  z-index: 10;
+main .email-value {
+  display: flex;
+  height: 0px;
+  /* height: auto; */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+main .email-value button {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #5a55cb;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+main form > button {
+  width: 100%;
+  height: 50px;
+  background-color: #5a55cb;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 40px;
+  cursor: pointer;
 }
