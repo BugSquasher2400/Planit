@@ -13,7 +13,12 @@
       <form action="/todo" name="" method="post">
         <label for="">이메일</label>
         <div class="email-auth">
-          <input type="email" placeholder="영문,숫자 4~20자" />
+          <input
+            type="email"
+            placeholder="영문,숫자 4~20자"
+            pattern="^[A-Za-z0-9]{4,20}$"
+            title="영문,숫자 4~20자 양식에 맞춰입력해주세요."
+          />
           <button>인증</button>
         </div>
         <div class="email-value">
@@ -21,12 +26,17 @@
           <button>확인</button>
         </div>
         <label for="">패스워드</label>
-        <input type="password" placeholder="영문,숫자,특수문자 4~20자" />
+        <input
+          type="password"
+          placeholder="영문,숫자,특수문자 4~20자"
+          pattern="^[A-Za-z0-9!@#$%^&*()_+\-={}\[\]:,.]{4,20}$"
+        />
         <label for="">닉네임</label>
         <input type="text" placeholder="새싹" />
         <button>등록</button>
       </form>
     </main>
     <footer></footer>
+    <script></script>
   </body>
 </html>
